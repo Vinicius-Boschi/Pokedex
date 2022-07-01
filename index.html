@@ -5,28 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Pokedex</title>
+    <title>Pokémon</title>
 </head>
 <body>
 
     <header>
         <nav>
-            <h1>Pokedex</h1>
+            <img class="logo" src="assets/img/pokemon-logo.png" alt="logo">
         </nav>
-    </header>
+    </header>  
 
     <main>
         <div class="order_search">
             <input type="search" name="search" id="search" placeholder="Pesquisar">
-            <button>
-                <img src="assets/img/search-icon.svg" alt="pesquisar">
+            <button class="icon">
+                <img class="icon-search" src="assets/img/search-icon.svg" alt="pesquisar">
             </button>
-            <button class="crescent" onclick="crescentOrder()">ordem crescente</button>
-            <button class="crescent" onclick="descendingOrder()">ordem decrescente</button>
-        </div>
+        </div> 
+
+        <section class="section">
+            <div class="about-center section-center">
+                <article class="about-img">
+                    <img class="image" src="assets/img/squirtle.png" alt="about picture">
+                </article>
+                <article class="about">
+                    <div class="btn-container">
+                        <button class="tab-btn active" data-id="history">description</button>
+                        <button class="tab-btn" data-id="vision">vision</button>
+                        <button class="tab-btn" data-id="goals">goals</button>
+                    </div>
+                    <article class="about-content">
+                        <div class="content active" id="history">
+                            <p class="id">N° 7</p>
+                            <h1 class="name">Name: Squirtle</h1>
+                            <p class="type">Type: water</p>
+                        </div>
+                        <div class="content" id="vision">
+                            <h4>vision</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, temporibus saepe, neque aut id iusto laboriosam quae non, distinctio numquam consequatur. Voluptatum modi doloribus fuga blanditiis porro voluptatem ab quod.</p>
+                        </div>
+                        <div class="content" id="goals">
+                            <h4>goals</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit excepturi ducimus, commodi maxime modi reprehenderit perspiciatis laudantium dolore quod rem debitis quibusdam eius quasi! Exercitationem et atque voluptas nesciunt totam.</p>
+                        </div>
+                    </article>
+                </article>
+            </div>
+        </section>
     </main>
 
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/script.js" type="module"></script>
     
 </body>
 </html>

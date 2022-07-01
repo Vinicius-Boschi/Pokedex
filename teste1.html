@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Pokedex</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <img class="logo" src="assets/img/pokemon-logo.png" alt="logo">
+        </nav>
+    </header>   
+
+    <main>
+        <div class="order_search">
+            <input type="search" name="search" id="search" placeholder="Pesquisar">
+            <button class="icon">
+                <img class="icon-search" src="assets/img/search-icon.svg" alt="pesquisar">
+            </button>
+            <button class="ascending" onclick="ascendingOrder()">ordem crescente</button>
+            <button class="descending" onclick="descendingOrder()">ordem decrescente</button>
+        </div>  
+
+        <div class="pokemon">
+            <figure class="figure">
+                <img src="assets/img/squirtle.png" alt="pokemon" class="image">
+            </figure>
+            <section class="description">
+                <span class="id">#007</span>
+                <h1 class="name">Squirtle</h1>
+                <div class="types">
+                    <span class="type">water</span>
+                </div>
+            </section>
+            <section class="stats">
+                <div class="row">
+                    <div>hp</div>
+                    <div class="bar">
+                        <div class="bar-bg">45</div> 
+                    </div>
+                </div>
+                <div class="row">
+                    <div>ataque</div>
+                    <div class="bar">
+                        <div class="bar-bg">49</div> 
+                    </div>
+                </div>
+                <div class="row">
+                    <div>defesa</div>
+                    <div class="bar">
+                        <div class="bar-bg">49</div> 
+                    </div>
+                </div>
+                <div class="row">
+                    <div>sp-atk</div>
+                    <div class="bar">
+                        <div class="bar-bg">65</div> 
+                    </div>
+                </div>
+                <div class="row">
+                    <div>sp-def</div>
+                    <div class="bar">
+                        <div class="bar-bg">65</div> 
+                    </div>
+                </div>
+                <div class="row">
+                    <div>velocidade</div>
+                    <div class="bar">
+                        <div class="bar-bg">45</div> 
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="assets/js/script.js"></script>
+    
+</body>
+</html>
