@@ -8,9 +8,25 @@
   box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0073BC;
+    border-radius: 30px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #DC0F0F;
+    border-radius: 30px;
+    visibility: visible;
+}
+
+
 body {
   font-family: 'Open Sans', sans-serif;
-  background: #F1F4F8;
+  background: #CFD3D8;
   color: #0F2941;
   line-height: 1.5;
   font-size: 0.875rem;
@@ -28,6 +44,7 @@ header {
 
 main {
     font-family: 'Kantumruy Pro', sans-serif;
+    text-transform: capitalize;
 }
 
 .order_search {
@@ -39,6 +56,7 @@ main {
     padding: .4rem;
     border: 2px solid black;
     border-radius: 6px;
+    width: 25%;
 }
 
 .icon {
@@ -63,20 +81,22 @@ main {
     background-color: lightblue;
     width: 100%;
     text-align: center;
-    border-radius: .5rem;
+    border-radius: .5rem 0 0 .5rem;
 }
 
 .image {
-    height: 15rem;
+    height: 16rem;
     background: white;
     border-radius: 50%;
+    margin-top: 2rem;
 }
 
 .about {
     background: white;
-    border-radius: .5rem;
     display: grid;
     grid-template-rows: auto 1fr;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
 }
 
 .btn-container {
@@ -89,13 +109,13 @@ main {
 .tab-btn {
     padding: 1rem 0;
     border: none;
-    text-transform: capitalize;
     font-size: 1rem;
     display: block;
     background: #D9E2EC;
     cursor: pointer;
     transition: all .3s linear;
     letter-spacing: .2rem;
+    text-transform: capitalize;
 }
   
 .tab-btn:hover:not(.active) {
@@ -103,27 +123,24 @@ main {
     color: #49a6e9;
 }
 
-.tab-btn:nth-child(1) {
-    border-top-left-radius: .5rem;
-}
-
-.tab-btn:nth-child(3) {
-    border-top-right-radius: .5rem;
-}
-
 .tab-btn.active {
     background: white;
 }
 
+.tab-btn:nth-child(3) {
+    border-top-right-radius: 0.5rem;
+}
+
 .about-content {
-    border-bottom-left-radius: .5rem;
-    border-bottom-right-radius: .5rem;
     padding: 2rem 1.5rem;
+    border-top: 1px solid #EAEAEB;
 }
 
 .content {
     display: none;
     font-size: 14pt;
+    font-weight: bold;
+    line-height: 2;
 }
 
 .content.active {
@@ -131,13 +148,12 @@ main {
 }
 
 .name {
-    text-transform: capitalize;
     padding-top: 1rem;
 }
 
 .type {
-    padding-top: 1rem;
-    font-weight: bold;
+    padding: .4rem;
+    border-radius: 0.3rem;
 }
 
 @media screen and (min-width: 992px) {
@@ -153,5 +169,20 @@ main {
     .about-center {
         display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 985px) {
+
+    .image {
+        margin: 0 auto;
+    }
+
+    .about-img {
+        border-radius: 0.5rem 0.5rem 0 0rem;
+    }
+
+    .about {
+        border-radius: 0 0 .5rem .5rem;
     }
 }

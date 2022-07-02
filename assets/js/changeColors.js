@@ -1,9 +1,10 @@
 const changeBg = document.querySelector('.about-img')
+const changeType = document.querySelector('.type')
 
 const colors = {
     steel: '#F4F4F4',
     fire: '#FDDFDF',
-    grass: '#DEFDE0',
+    grass: '#7ED49B',
     electric: '#FCF7DE',
     water: '#DEF3FD',
     ice: '#DEF3FD',
@@ -16,9 +17,11 @@ const colors = {
     psychic: '#EAEDA1',
     flying: '#F5F5F5',
     fighting: '#E6E0D4',
-    ghost: '#EBC2C2'
+    ghost: '#EBC2C2',
+    normal: '#F5F5F5'
 }
 
 export const changeColors = (types) => {
     changeBg.style.backgroundColor = colors[types]
+    changeType.style.backgroundColor = colors[types]
 }

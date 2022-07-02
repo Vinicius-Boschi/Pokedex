@@ -1,5 +1,6 @@
-import {search, button, btns, about, articles, image, idPokemon, namePokemon, type} from './variable.js'
+import {search, button, image, idPokemon, namePokemon, type, heightPokemon, weightPokemon, abilities} from './variable.js'
 import { changeColors } from './changeColors.js'
+import { aboutContent } from './content.js'
 
 let results = {
     fetchResults: function(name) {
@@ -15,18 +16,23 @@ let results = {
     },
 
     displayResults: function(info) {
-        const { id, name, types } = info
+        const { id, name, types, height, weight } =  info
+        const { ability } = info.abilities[0]
         const typesArray = []
-
-        image.src =`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${id}.png`
-        idPokemon.textContent = 'N° ' + id
-        namePokemon.textContent = 'Name: ' + name
+        
         types.forEach((type) => {
             typesArray.push(type.type.name)
         })
         changeColors(typesArray[0])
         const typesText = typesArray.join(" / ")
+
+        image.src =`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${id}.png`
+        idPokemon.textContent = 'N° Pokedéx ' + '#0' + id
+        namePokemon.textContent = 'Name: ' + name
         type.textContent = 'Type: ' + typesText
+        heightPokemon.textContent = 'Height: ' + '0.' + height + ' m'
+        weightPokemon.textContent = 'Weight: ' + weight + ' kg'
+        abilities.textContent = 'Abilities: ' + ability.name
     },
 
     search: function() {
@@ -34,27 +40,12 @@ let results = {
     }
 }
 
+results.fetchResults('bulbasaur')
+
 button.addEventListener('click', search)
 search.addEventListener('keyup', function (event) {
     if (event.keyCode === 13) {
         results.search()
         return
-    }
-})
-
-results.fetchResults('bulbasaur')
-
-about.addEventListener('click', function(e) {
-    const id = e.target.dataset.id 
-    if (id) {
-        btns.forEach(function (btn) {
-            btn.classList.remove('active') 
-            e.target.classList.add('active')
-        })
-        articles.forEach(function(article) {
-            article.classList.remove('active')
-        })
-        const element = document.getElementById(id)
-        element.classList.add('active')
     }
 })
