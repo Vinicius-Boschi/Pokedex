@@ -1,4 +1,5 @@
 import {search, button, btns, about, articles, image, idPokemon, namePokemon, type} from './variable.js'
+import { changeColors } from './changeColors.js'
 
 let results = {
     fetchResults: function(name) {
@@ -15,11 +16,17 @@ let results = {
 
     displayResults: function(info) {
         const { id, name, types } = info
+        const typesArray = []
 
         image.src =`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${id}.png`
         idPokemon.textContent = 'N° ' + id
         namePokemon.textContent = 'Name: ' + name
-        type.textContent = 'Type: ' + types.map(typeInfo => typeInfo.type.name)
+        types.forEach((type) => {
+            typesArray.push(type.type.name)
+        })
+        changeColors(typesArray[0])
+        const typesText = typesArray.join(" / ")
+        type.textContent = 'Type: ' + typesText
     },
 
     search: function() {
