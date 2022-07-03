@@ -1,4 +1,4 @@
-import {search, button, image, idPokemon, namePokemon, type, heightPokemon, weightPokemon, abilities} from './variable.js'
+import {search, button, image, idPokemon, namePokemon, type, heightPokemon, weightPokemon, abilities, hpPokemon, attackPokemon, defensePokemon, spAttackPokemon, spDefensePokemon, speedPokemon} from './variable.js'
 import { changeColors } from './changeColors.js'
 import { aboutContent } from './content.js'
 
@@ -17,8 +17,14 @@ let results = {
 
     displayResults: function(info) {
         const { id, name, types, height, weight } =  info
-        const { ability } = info.abilities[0]
+        const { ability }  = info.abilities[0]
         const typesArray = []
+        const hp = info.stats[0].base_stat
+        const attack = info.stats[1].base_stat
+        const defense = info.stats[2].base_stat
+        const spAttack = info.stats[3].base_stat
+        const spDefense = info.stats[4].base_stat
+        const speed = info.stats[5].base_stat
         
         types.forEach((type) => {
             typesArray.push(type.type.name)
@@ -33,6 +39,12 @@ let results = {
         heightPokemon.textContent = 'Height: ' + '0.' + height + ' m'
         weightPokemon.textContent = 'Weight: ' + weight + ' kg'
         abilities.textContent = 'Abilities: ' + ability.name
+        hpPokemon.textContent = 'HP: ' + hp
+        attackPokemon.textContent = 'Attack: ' + attack
+        defensePokemon.textContent = 'Defense: ' + defense
+        spAttackPokemon.textContent = 'Special Attack: ' + spAttack
+        spDefensePokemon.textContent = 'Special Defense: ' + spDefense
+        speedPokemon.textContent = 'Speed: ' + speed
     },
 
     search: function() {

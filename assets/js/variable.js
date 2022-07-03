@@ -10,5 +10,11 @@ const type =  document.querySelector('.type')
 const heightPokemon = document.querySelector('.height') 
 const weightPokemon = document.querySelector('.weight')
 const abilities = document.querySelector('.abilities')
+const hpPokemon = document.querySelector('.hp')
+const attackPokemon = document.querySelector('.attack')
+const defensePokemon = document.querySelector('.defense')
+const spAttackPokemon = document.querySelector('.sp-attack')
+const spDefensePokemon = document.querySelector('.sp-defense')
+const speedPokemon = document.querySelector('.speed')
 
-export { search, button, btns, aboutContent, articles, image, idPokemon, namePokemon, type, heightPokemon, weightPokemon, abilities}
+export { search, button, btns, aboutContent, articles, image, idPokemon, namePokemon, type, heightPokemon, weightPokemon, abilities, hpPokemon, attackPokemon, defensePokemon, spAttackPokemon, spDefensePokemon, speedPokemon}

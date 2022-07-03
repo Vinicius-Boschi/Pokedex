@@ -154,6 +154,7 @@ main {
 .type {
     padding: .4rem;
     border-radius: 0.3rem;
+    color: #FFFFFF;
 }
 
 @media screen and (min-width: 992px) {
