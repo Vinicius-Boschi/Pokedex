@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Pokémon</title>
+    <title>Pokedex</title>
 </head>
 <body>
 
@@ -22,41 +22,37 @@
                 <img class="icon-search" src="assets/img/search-icon.svg" alt="pesquisar">
             </button>
         </div> 
-
         <section class="section">
             <div class="about-center section-center">
                 <article class="about-img">
                     <img class="image" src="" alt="about picture">
                 </article>
                 <article class="about">
-                    <div class="btn-container">
-                        <button class="tab-btn active" data-id="description">description</button>
-                        <button class="tab-btn" data-id="stats">stats</button>
-                        <button class="tab-btn" data-id="varieties">varieties</button>
+                    <div class="container">
+                        <div class="btn-container">
+                            <button class="tab-btn active" data-id="description">description</button>
+                            <button class="tab-btn" data-id="stats">stats</button>
+                        </div>
+                        <article class="about-content">
+                            <div class="content active" id="description">
+                                <p class="id"></p>
+                                <h1 class="name"></h1>
+                                <p class="type"></p>
+                                <p class="height"></p>
+                                <p class="weight"></p>
+                                <p class="abilities"></p>
+                                <p class="local"></p>
+                            </div>
+                            <div class="content" id="stats">
+                                <p class="hp"></p>
+                                <p class="attack"></p>
+                                <p class="defense"></p>
+                                <p class="sp-attack"></p>
+                                <p class="sp-defense"></p>
+                                <p class="speed"></p>
+                            </div>
+                        </article>
                     </div>
-                    <article class="about-content">
-                        <div class="content active" id="description">
-                            <p class="id"></p>
-                            <h1 class="name"></h1>
-                            <p class="type"></p>
-                            <p class="height"></p>
-                            <p class="weight"></p>
-                            <p class="abilities"></p>
-                            <p class="local"></p>
-                        </div>
-                        <div class="content" id="stats">
-                            <p class="hp"></p>
-                            <p class="attack"></p>
-                            <p class="defense"></p>
-                            <p class="sp-attack"></p>
-                            <p class="sp-defense"></p>
-                            <p class="speed"></p>
-                        </div>
-                        <div class="content" id="varieties">
-                            <h4>goals</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit excepturi ducimus, commodi maxime modi reprehenderit perspiciatis laudantium dolore quod rem debitis quibusdam eius quasi! Exercitationem et atque voluptas nesciunt totam.</p>
-                        </div>
-                    </article>
                 </article>
             </div>
         </section>

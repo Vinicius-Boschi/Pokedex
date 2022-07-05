@@ -1,20 +1,23 @@
-const search = document.querySelector('input')
-const button = document.querySelector('.icon-search')
-const btns = document.querySelectorAll('.tab-btn')
-const aboutContent = document.querySelector('.about')
-const articles = document.querySelectorAll('.content')
-const image =  document.querySelector('.image')
-const idPokemon = document.querySelector('.id')
-const namePokemon = document.querySelector('.name')
-const type =  document.querySelector('.type')
-const heightPokemon = document.querySelector('.height') 
-const weightPokemon = document.querySelector('.weight')
-const abilities = document.querySelector('.abilities')
-const hpPokemon = document.querySelector('.hp')
-const attackPokemon = document.querySelector('.attack')
-const defensePokemon = document.querySelector('.defense')
-const spAttackPokemon = document.querySelector('.sp-attack')
-const spDefensePokemon = document.querySelector('.sp-defense')
-const speedPokemon = document.querySelector('.speed')
+let variables = {
+    search: document.querySelector('input'),
+    button: document.querySelector('.icon-search'),
+    btns: document.querySelectorAll('.tab-btn'),
+    articles: document.querySelectorAll('.content'),
+    image:  document.querySelector('.image'),
+    idPokemon: document.querySelector('.id'),
+    namePokemon: document.querySelector('.name'),
+    type:  document.querySelector('.type'),
+    heightPokemon: document.querySelector('.height'),
+    weightPokemon: document.querySelector('.weight'),
+    abilities: document.querySelector('.abilities'),
+    hpPokemon: document.querySelector('.hp'),
+    attackPokemon: document.querySelector('.attack'),
+    defensePokemon: document.querySelector('.defense'),
+    spAttackPokemon: document.querySelector('.sp-attack'),
+    spDefensePokemon: document.querySelector('.sp-defense'),
+    speedPokemon: document.querySelector('.speed'),
+    changeBg: document.querySelector('.about-img'),
+    changeType: document.querySelector('.type')
+}
 
-export { search, button, btns, aboutContent, articles, image, idPokemon, namePokemon, type, heightPokemon, weightPokemon, abilities, hpPokemon, attackPokemon, defensePokemon, spAttackPokemon, spDefensePokemon, speedPokemon}
+export { variables }

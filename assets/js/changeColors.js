@@ -1,5 +1,4 @@
-const changeBg = document.querySelector('.about-img')
-const changeType = document.querySelector('.type')
+import { variables } from './variable.js'
 
 const colors = {
     fire: "#fc7c4e",
@@ -23,6 +22,6 @@ const colors = {
 }
 
 export const changeColors = (types) => {
-    changeBg.style.backgroundColor = colors[types]
-    changeType.style.backgroundColor = colors[types]
+    variables.changeBg.style.backgroundColor = colors[types]
+    variables.changeType.style.backgroundColor = colors[types]
 }
