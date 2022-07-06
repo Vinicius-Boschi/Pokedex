@@ -6,8 +6,7 @@
 Esse é um projeto de requisição da Api de Polémon.
   
 # <h3> :pencil: Tela Inicial</h3>  
-![home](https://user-images.githubusercontent.com/74377158/177017188-59d7d183-77d1-4a71-931d-616ac5353f47.jpg)
-
+![home](https://user-images.githubusercontent.com/74377158/177438025-ccd8a8f7-f445-4214-9a91-6251f848e799.jpg)
 
 # <h3> :file_folder: Acessar o projeto</h3>
 Você pode acessar o porjeto por este [link](https://pokedexapipokemon.netlify.app/).
