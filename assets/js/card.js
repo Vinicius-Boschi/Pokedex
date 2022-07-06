@@ -23,8 +23,8 @@ function createPokemonCard(pokemon) {
   variables.idPokemon.innerText = 'N° Pokedéx ' + id
   variables.namePokemon.innerText = 'Name: ' + name
   variables.type.innerText = 'Type: ' + typesText
-  variables.heightPokemon.innerText = 'Height: ' + height + ' m'
-  variables.weightPokemon.innerText = 'Weight: ' + weight + ' kg'
+  variables.heightPokemon.innerText = 'Height: ' + height / 10 + ' m'
+  variables.weightPokemon.innerText = 'Weight: ' + weight / 10 + ' kg' 
   variables.abilities.innerText = 'Abilities: ' + ability.name
   variables.hpPokemon.innerText = 'HP: ' + hp
   variables.attackPokemon.innerText = 'Attack: ' + attack
@@ -32,6 +32,8 @@ function createPokemonCard(pokemon) {
   variables.spAttackPokemon.innerText = 'Special Attack: ' + spAttack
   variables.spDefensePokemon.innerText = 'Special Defense: ' + spDefense
   variables.speedPokemon.innerText = 'Speed: ' + speed
+
+  variables.search.value = ''
 }
 
 export { createPokemonCard }

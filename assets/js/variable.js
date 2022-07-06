@@ -1,6 +1,5 @@
 let variables = {
     search: document.querySelector('input'),
-    button: document.querySelector('.icon-search'),
     btns: document.querySelectorAll('.tab-btn'),
     articles: document.querySelectorAll('.content'),
     image:  document.querySelector('.image'),

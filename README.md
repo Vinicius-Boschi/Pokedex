@@ -13,7 +13,7 @@ Esse é um projeto de requisição da Api de Polémon.
 Você pode acessar o porjeto por este [link](https://pokedexapipokemon.netlify.app/).
 
 # <h3> :heavy_check_mark: Status do Projeto:</h3>
-![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
+![Badge Concluido em Desenvolvimento](https://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=blue&style=for-the-badge)
 
 # <h3> :hammer: Funcionalidades do projeto</h3>
 - `Funcionalidade 1`: Mostrar foto do pokémon.

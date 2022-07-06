@@ -59,13 +59,6 @@ main {
     width: 25%;
 }
 
-.icon {
-    background: none;
-    border: none;
-    position: absolute;
-    margin: 0.3rem 0rem 0rem -2rem;
-}
-
 .section {
     padding: 2rem 0;
 }
