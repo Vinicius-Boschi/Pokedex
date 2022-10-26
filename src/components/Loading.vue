@@ -13,11 +13,13 @@
 </script>
 
 <style lang="scss">
+    @import '../assets/variables.scss';
+
     .pokeball {
         width: 50px;
         height: 50px;
         border-radius: 50px;
-        border: 2px solid #000;
+        border: 2px solid $black;
         position: relative;
         background: linear-gradient(to bottom, #EEEEEE 0%,#FFFFFF 100%);
         margin: 10px auto;
@@ -32,7 +34,7 @@
         &::before {
             width: 50px;
             height: 25px;
-            border-bottom: 2px solid #000;
+            border-bottom: 2px solid $black;
             border-radius: 25px 25px 0 0;
             background: linear-gradient(to bottom, #d10000 0%,#ff0000 50%);
         }
@@ -47,10 +49,10 @@
             top: 50%;
             transform: translate(-50%, -50%);
             border-radius: 50%;
-            box-shadow: 0 0 0 (50px/50) black,
-            0 0 0 (50px/25) #ddd,
+            box-shadow: 0 0 0 (50px/50) $black,
+            0 0 0 (50px/25) $white-two,
             0 0 0 (50px/14) black,
-            0 0 (50px/10) (50px/17) rgba(0,0,0,0.4);
+            0 0 (50px/10) (50px/17) $black;
         }
 
         &.bounce {

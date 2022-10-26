@@ -60,8 +60,8 @@
 
         button {
             border: none;
-            background-color: #0073BC;
-            color: #FFF;
+            background-color: $blue;
+            color: $white;
             padding: .5rem;
             border-radius: 5px;
             cursor: pointer;

@@ -115,7 +115,7 @@
         padding: 65px 10px 10px;
         width: 100%;
         height: 100vh;
-        background: rgba(10, 7, 0, 0.562);    
+        background: $black-two;    
         overflow: scroll;
     }
 
@@ -128,9 +128,9 @@
         height: 54vw;
         position: relative;
         max-width: 510px;   
-        background-color: #FFF;
+        background-color: $white;
         border-radius: 5px;
-        box-shadow: 0 15px 30px rgba(0,0,0,.2), 0 10px 10px rgba(0,0,0,.2);   
+        box-shadow: 0 15px 30px $black-three, 0 10px 10px $black-three;;   
         
         @include phone {
             width: 90%;
@@ -145,9 +145,9 @@
         top: -60px;
         width: 120px;
         height: 120px;
-        background-color: #0073BC;
+        background-color: $blue;
         border-radius: 50%;
-        box-shadow: 0 15px 30px rgba(0,0,0,.2), 0 10px 10px rgba(0,0,0,.2);
+        box-shadow: 0 15px 30px $black-three, 0 10px 10px $black-three;
 
         img {
             width: 100%;
@@ -169,7 +169,7 @@
     .property, .status {
         width: 90%;
         max-width: 400px;
-        border-bottom: 1px solid #ccc;
+        border-bottom: 1px solid $light-gray-two;
         margin-bottom: 10px;
     }
 
@@ -182,24 +182,24 @@
     }
 
     .types {
-        .grass { background: hsl(142, 59%, 55%);}
-        .poison { background: rgb(92, 39, 157);}
-        .water { background: rgb(70, 70, 235);}
-        .dragon { background:rgb(27, 2, 68);}
-        .ice { background:rgb(78, 199, 255);}
-        .flying { background:rgb(145, 215, 255);}
-        .fire { background:#ee8711;}
-        .ghost { background:rgb(74, 52, 87);}
-        .fighting { background:rgb(122, 0, 0);}
-        .normal { background:rgb(104, 104, 104);}
-        .psychic { background:rgb(195, 0, 255);}
-        .bug { background:rgb(52, 87, 6);}
-        .dark { background:rgb(43, 43, 43);}
-        .steel { background:rgb(116, 116, 116);}
-        .fairy { background:rgb(248, 165, 237);}
-        .electric { background:rgb(255, 217, 1);}
-        .rock { background:rgb(88, 95, 100);}
-        .ground { background:rgb(92, 70, 70);}
+        .grass { background: $grass;}
+        .poison { background: $poison;}
+        .water { background: $water;}
+        .dragon { background: $dragon;}
+        .ice { background: $ice;}
+        .flying { background: $flying;}
+        .fire { background:$fire;}
+        .ghost { background: $ghost;}
+        .fighting { background: $fighting;}
+        .normal { background: $normal;}
+        .psychic { background: $psychic;}
+        .bug { background: $bug;}
+        .dark { background: $dark;}
+        .steel { background: $steel;}
+        .fairy { background: $fairy;}
+        .electric { background: $electric;}
+        .rock { background: $rock;}
+        .ground { background: $ground;}
     }
 
     .types, .abilities {
@@ -219,14 +219,14 @@
         text-transform: capitalize;
             
         span {
-            color: #FFF;            
+            color: $white;            
             padding: 10px 14px;
             border-radius: 29px;   
         }
     }
         
     .ability {
-        color: rgb(10, 119, 10);
+        color: $green;
         margin: 0 10px 10px 0;
         border-radius: 20px;
         padding: 5px 10px;
@@ -236,7 +236,7 @@
         text-transform: capitalize;
         word-wrap: none;
         word-break: keep-all;
-        background-color: #FFF;
+        background-color: $white;
         border: 3px solid;
     }
       
@@ -244,8 +244,8 @@
         outline: none;
         border: none;
         border-radius: 5px;
-        background-color: #C73015;
-        color: #efefef;
+        background-color: $red;
+        color: $white-two;
         padding: 10px 20px;
         margin-bottom: 20px;
         margin-top: 20px;
@@ -259,7 +259,7 @@
 
     i {
         font-size: 2rem;
-        color: #efefef;
+        color: $white-two;
     }
 
 </style>

@@ -79,11 +79,13 @@
 </script>
 
 <style lang="scss">
+    @import '../assets/variables.scss';
+
     .list {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        background: #EFEFBB;
+        background: $white-two;
         background: linear-gradient(to right, rgb(197, 230, 236), rgb(239, 187, 230));
 
         article {
@@ -91,8 +93,8 @@
             height: 250px;
             margin: 10px;
             margin-top: 2rem;
-            background-color: rgba(255, 255, 255, 0.722);
-            border: 1px solid #ccc;
+            background-color: $light-gray;
+            border: 1px solid $light-gray-two;
             border-radius: 5px;
             display: flex;
             flex-direction: column;

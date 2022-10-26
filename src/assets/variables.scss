@@ -1,3 +1,36 @@
+$white: #FFFFFF;
+$white-two: #EFEFBB;
+$light-gray: #FFFFFFB8;
+$light-gray-two: #CCC;
+$black: #000;
+$black-two:#0A07008F;
+$black-three: #00000033;
+$blue: #0073BC;
+$green: #0A770A;
+$red: #C73015;
+
+// Tipos dos pokémons.
+
+$grass: #49D07A;
+$poison: #5C279D;
+$water: #4646eB;
+$dragon: #1B0244;
+$ice: #4EC7FF;
+$flying: #91D7FF;
+$fire: #EE8711;
+$ghost: #4A3457;
+$fighting: #7A0000;
+$normal: #B8B8B8;
+$psychic: #C300FF;
+$bug: #345706;
+$dark: #2B2B2B;
+$steel: #747474;
+$fairy: #F8A5ED;
+$electric: #FFD700;
+$rock: #585F64;
+$ground: #5C4646;
+
+
 @mixin phone {
     @media (min-width: 375px) and (max-width: 540px) { @content; }
 }
