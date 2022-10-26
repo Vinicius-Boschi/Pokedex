@@ -35,12 +35,18 @@
 </script>
 
 <style lang="scss">
+    @import '../assets/variables.scss';
+
     .header, form {
         text-align: center;
         background: linear-gradient(to right, rgb(197, 229, 236), rgb(236, 119, 119));
 
         img {
             width: 15%;
+
+            @include phone {
+                width: 50%;
+            }
         }
 
         input {

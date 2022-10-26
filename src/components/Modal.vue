@@ -40,6 +40,14 @@
                     <span class="right">{{ pokemon.stats[2].base_stat }}</span>
                 </div>
                 <div class="status">
+                    <span class="left">Ataque Especial</span>
+                    <span class="right">{{ pokemon.stats[3].base_stat }}</span>
+                </div>
+                <div class="status">
+                    <span class="left">Defesa Especial</span>
+                    <span class="right">{{ pokemon.stats[4].base_stat }}</span>
+                </div>
+                <div class="status">
                     <span class="left">Velocidade</span>
                     <span class="right">{{ pokemon.stats[5].base_stat }}</span>
                 </div>
@@ -95,6 +103,7 @@
 </script>
 
 <style lang="scss">
+    @import '../assets/variables.scss';
 
     .detail {
         display: flex;
@@ -107,6 +116,7 @@
         width: 100%;
         height: 100vh;
         background: rgba(10, 7, 0, 0.562);    
+        overflow: scroll;
     }
 
     .detail-view {
@@ -115,12 +125,16 @@
         align-items: center;
         flex-direction: column;
         width: 100%;
-        padding: 50px 0 0;
+        height: 54vw;
         position: relative;
         max-width: 510px;   
         background-color: #FFF;
         border-radius: 5px;
-        box-shadow: 0 15px 30px rgba(0,0,0,.2), 0 10px 10px rgba(0,0,0,.2);      
+        box-shadow: 0 15px 30px rgba(0,0,0,.2), 0 10px 10px rgba(0,0,0,.2);   
+        
+        @include phone {
+            width: 90%;
+        }
     }
 
     .image {
@@ -234,6 +248,7 @@
         color: #efefef;
         padding: 10px 20px;
         margin-bottom: 20px;
+        margin-top: 20px;
         font-size: 1.2rem;
         cursor: pointer;
     }
