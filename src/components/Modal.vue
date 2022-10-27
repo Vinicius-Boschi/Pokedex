@@ -134,6 +134,11 @@
         
         @include phone {
             width: 90%;
+            height: 130%;
+        }
+
+        @include tablet {
+            height: 130%;
         }
     }
 
@@ -208,6 +213,10 @@
         flex-wrap: wrap;
         width: 100%;
         max-width: 410px;
+    }
+
+    .abilities {
+        padding-left: 20px;
     }
 
     .type { 
