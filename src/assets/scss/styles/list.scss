@@ -1,0 +1,33 @@
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: $white-two;
+  background: linear-gradient(to right, rgb(197, 230, 236), rgb(239, 187, 230));
+
+  article {
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+    margin-top: 2rem;
+    background-color: $light-gray;
+    border: 1px solid $light-gray-two;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+
+    img {
+      width: 100px;
+      height: 100px;
+    }
+
+    &:hover {
+      animation: bounce 0.5s linear;
+    }
+  }
+}

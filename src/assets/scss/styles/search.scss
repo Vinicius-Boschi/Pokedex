@@ -1,0 +1,31 @@
+.header,
+form {
+  text-align: center;
+  background: linear-gradient(to right, rgb(197, 229, 236), rgb(236, 119, 119));
+
+  img {
+    width: 15%;
+
+    @include phone {
+      width: 50%;
+    }
+  }
+
+  input {
+    margin-bottom: 2rem;
+    margin-right: 1rem;
+    border: none;
+    width: 15rem;
+    height: 1rem;
+    padding: 0.5rem;
+  }
+
+  button {
+    border: none;
+    background-color: $blue;
+    color: $white;
+    padding: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}
