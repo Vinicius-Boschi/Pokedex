@@ -1,7 +1,7 @@
 <template>
   <div class="container" id="home">
     <Search :apiUrl="apiUrl" @setPokemonUrl="setPokemonUrl" />
-    <router-view :imageUrl="imageUrl" :apiUrl="apiUrl" />
+    <router-view :imageUrl="imageUrl" :apiUrl="apiUrl" :types="types" />
   </div>
 </template>
 
@@ -22,6 +22,7 @@ export default {
       imageUrl:
         "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/",
       apiUrl: "https://pokeapi.co/api/v2/pokemon/",
+      types: [],
     }
   },
   methods: {

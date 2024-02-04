@@ -1,15 +1,11 @@
 <template>
-  <header class="header">
-    <img :src="imageHeader" :alt="logo" />
-  </header>
   <div class="search">
     <form @submit.prevent="handleSearch">
       <input
         type="text"
-        placeholder="Procure pelo nome ou número"
+        placeholder="Qual Pokémon você procura?"
         v-model="searchValue"
       />
-      <button type="submit">Search</button>
     </form>
   </div>
 </template>
@@ -22,9 +18,6 @@ export default {
   data() {
     return {
       searchValue: "",
-      imageHeader:
-        "https://user-images.githubusercontent.com/74377158/197866871-6c2d8d30-8043-4c80-881c-7ea9c7e7183c.png",
-      logo: "Logo Pokémon",
     }
   },
   methods: {

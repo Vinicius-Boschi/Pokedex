@@ -1,31 +1,16 @@
-.header,
 form {
   text-align: center;
-  background: linear-gradient(to right, rgb(197, 229, 236), rgb(236, 119, 119));
-
-  img {
-    width: 15%;
-
-    @include phone {
-      width: 50%;
-    }
-  }
+  position: relative;
+  z-index: 2;
 
   input {
-    margin-bottom: 2rem;
-    margin-right: 1rem;
-    border: none;
-    width: 15rem;
-    height: 1rem;
-    padding: 0.5rem;
-  }
-
-  button {
-    border: none;
-    background-color: $blue;
-    color: $white;
-    padding: 0.5rem;
-    border-radius: 5px;
-    cursor: pointer;
+    width: 80%;
+    height: 60px;
+    border-radius: 10px;
+    margin: 10px 0px 50px;
+    padding: 0px 20px;
+    text-align: center;
+    border: 2px solid transparent;
+    font-size: 1.2rem;
   }
 }

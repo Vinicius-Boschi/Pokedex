@@ -1,12 +1,30 @@
 <template>
-  <div class="container" id="details">
-    <div v-if="pokemon">
-      <img :src="imageUrl + pokemon.id + '.png'" :alt="pokemon.name" />
-      <h3>{{ pokemon.name }}</h3>
+  <div class="container" v-if="pokemon">
+    <div class="back">
+      <h1 class="back-name">{{ pokemon.name }}</h1>
     </div>
-    <div v-else>
-      <p>Carregando informações do Pokémon...</p>
+    <div class="content">
+      <img
+        class="image"
+        :src="imageUrl + (pokemon ? pokemon.id + '.png' : '')"
+        :alt="pokemon ? pokemon.name : ''"
+      />
+      <div>
+        <h2 class="card-title">{{ pokemon.name }}</h2>
+        <div class="types">
+          <div
+            class="type"
+            v-for="(value, index) in pokemon.types"
+            :key="index"
+          >
+            <span :class="value.type.name">{{ value.type.name }}</span>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
+  <div v-else>
+    <p>Carregando informações do Pokémon...</p>
   </div>
 </template>
 
@@ -17,7 +35,7 @@ export default {
   data() {
     return {
       pokemon: null,
-    }
+    };
   },
   watch: {
     id: {
@@ -39,13 +57,14 @@ export default {
           )
         }
         const pokemonData = await response.json()
+        this.types = pokemonData.types || []
         this.pokemon = pokemonData
       } catch (error) {
         console.error("Erro ao buscar detalhes do Pokémon:", error)
       }
     },
   },
-}
+};
 </script>
 
 <style lang="scss">

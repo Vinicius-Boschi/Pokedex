@@ -1,0 +1,142 @@
+.back {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  z-index: 2;
+
+  &-name {
+    font-weight: bold;
+    font-size: 12vw;
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px black;
+    color: white;
+    -webkit-text-stroke: 1px #f8f8f8;
+    text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
+      -1px 1px 0 #000, 1px 1px 0 #000;
+    opacity: 0.1;
+  }
+}
+
+.content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  margin-top: 14vh;
+  z-index: 2;
+}
+
+.image {
+  width: 22%;
+  height: 22%;
+}
+
+.card-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+  text-transform: capitalize;
+}
+
+.types {
+  .grass {
+    background: $grass;
+  }
+  .poison {
+    background: $poison;
+  }
+  .water {
+    background: $water;
+  }
+  .dragon {
+    background: $dragon;
+  }
+  .ice {
+    background: $ice;
+  }
+  .flying {
+    background: $flying;
+  }
+  .fire {
+    background: $fire;
+  }
+  .ghost {
+    background: $ghost;
+  }
+  .fighting {
+    background: $fighting;
+  }
+  .normal {
+    background: $normal;
+  }
+  .psychic {
+    background: $psychic;
+  }
+  .bug {
+    background: $bug;
+  }
+  .dark {
+    background: $dark;
+  }
+  .steel {
+    background: $steel;
+  }
+  .fairy {
+    background: $fairy;
+  }
+  .electric {
+    background: $electric;
+  }
+  .rock {
+    background: $rock;
+  }
+  .ground {
+    background: $ground;
+  }
+}
+
+.types,
+.abilities {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 410px;
+}
+
+.abilities {
+  padding-left: 20px;
+}
+
+.type {
+  margin: 0 0 10px 0;
+  padding: 5px 10px;
+  font-weight: bold;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+
+  span {
+    color: $white;
+    padding: 10px 14px;
+    border-radius: 29px;
+  }
+}
+
+.ability {
+  color: $green;
+  margin: 0 10px 10px 0;
+  border-radius: 20px;
+  padding: 5px 10px;
+  font-weight: bold;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  word-wrap: none;
+  word-break: keep-all;
+  background-color: $white;
+  border: 3px solid;
+}

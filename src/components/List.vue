@@ -61,7 +61,6 @@ export default {
           }
         })
       })
-
       observer.observe(this.$refs.infinitescrolltrigger)
     },
     next() {
