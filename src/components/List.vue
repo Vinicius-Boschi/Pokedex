@@ -2,9 +2,9 @@
   <div class="list">
     <article
       class="article"
-      v-for="(pokemon, index) in pokemons"
-      :key="'poke' + index"
-      @click="setPokemonUrl(pokemon.url)"
+      v-for="pokemon in pokemons"
+      :key="pokemon.id"
+      @click="setPokemonUrl(pokemon.id)"
     >
       <img :src="imageUrl + pokemon.id + '.png'" :alt="pokemon.name" />
       <h3>{{ pokemon.name }}</h3>
@@ -32,44 +32,44 @@ export default {
     }
   },
   methods: {
-    fetchData() {
-      let req = new Request(this.currentUrl)
-      fetch(req)
-        .then((resp) => {
-          return resp.json()
+    async fetchData() {
+      try {
+        const response = await fetch(this.currentUrl)
+
+        if (!response.ok) {
+          throw new Error(
+            `Erro na solicitação: ${response.status} ${response.statusText}`
+          )
+        }
+
+        const { next, results } = await response.json()
+        this.nextUrl = next
+
+        results.forEach((pokemon) => {
+          pokemon.id = pokemon.url.split("/").filter(Boolean).pop()
+          this.pokemons.push(pokemon)
         })
-        .then((data) => {
-          this.nextUrl = data.next
-          data.results.forEach((pokemon) => {
-            pokemon.id = pokemon.url
-              .split("/")
-              .filter(function (part) {
-                return !!part
-              })
-              .pop()
-            this.pokemons.push(pokemon)
-          })
-        })
-        .catch((error) => {
-          console.log(error)
-        })
+      } catch (error) {
+        console.error(error)
+      }
     },
     scrollTrigger() {
       const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.intersectionRatio > 0 && this.nextUrl) {
+        entries.forEach(({ intersectionRatio }) => {
+          if (intersectionRatio > 0 && this.nextUrl) {
             this.next()
           }
         })
       })
+
       observer.observe(this.$refs.infinitescrolltrigger)
     },
     next() {
       this.currentUrl = this.nextUrl
       this.fetchData()
     },
-    setPokemonUrl(url) {
-      this.$emit("setPokemonUrl", url)
+    setPokemonUrl(id) {
+      this.$router.push({ name: "Details", params: { id } })
     },
   },
   created() {

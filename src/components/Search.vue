@@ -3,13 +3,13 @@
     <img :src="imageHeader" :alt="logo" />
   </header>
   <div class="search">
-    <form @submit.prevent="setPokemonUrl">
+    <form @submit.prevent="handleSearch">
       <input
         type="text"
         placeholder="Procure pelo nome ou número"
         v-model="searchValue"
       />
-      <button @click="setPokemonUrl">Search</button>
+      <button type="submit">Search</button>
     </form>
   </div>
 </template>
@@ -18,6 +18,7 @@
 export default {
   name: "Search",
   props: ["apiUrl"],
+  emits: ["setPokemonUrl"],
   data() {
     return {
       searchValue: "",
@@ -27,9 +28,10 @@ export default {
     }
   },
   methods: {
-    setPokemonUrl() {
-      if (this.searchValue !== "") {
-        this.$emit("setPokemonUrl", this.apiUrl + this.searchValue)
+    handleSearch() {
+      if (this.searchValue.trim() !== "") {
+        const apiUrlWithSearch = `${this.apiUrl}${this.searchValue.trim()}`
+        this.$emit("setPokemonUrl", apiUrlWithSearch)
         this.searchValue = ""
       }
     },
