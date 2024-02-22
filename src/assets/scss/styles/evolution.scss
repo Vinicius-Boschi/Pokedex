@@ -1,0 +1,22 @@
+.evolution {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+  &__pokemon {
+    width: 75%;
+    height: auto;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+
+  &__arrow {
+    filter: invert(1);
+    opacity: 0.5;
+    width: 30%;
+    height: auto;
+  }
+}

@@ -1,6 +1,6 @@
 <template>
   <div class="search">
-    <form @submit.prevent="handleSearch">
+    <form class="search__form" @submit.prevent="handleSearch">
       <input
         type="text"
         placeholder="Qual Pokémon você procura?"

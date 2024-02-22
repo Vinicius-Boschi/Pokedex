@@ -1,7 +1,7 @@
 <template>
   <div class="list">
     <article
-      class="article"
+      class="list__article"
       v-for="pokemon in pokemons"
       :key="pokemon.id"
       @click="setPokemonUrl(pokemon.id)"

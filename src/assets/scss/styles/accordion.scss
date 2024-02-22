@@ -1,0 +1,131 @@
+.accordion {
+  &__about {
+    background: $white;
+    border-radius: 0.5rem;
+  }
+
+  &__btn-container {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  &__tab-btn {
+    padding: 1rem 0;
+    border: none;
+    text-transform: capitalize;
+    font-size: 1rem;
+    display: block;
+    background: $light-gray-two;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    letter-spacing: 0.25rem;
+
+    &:hover:not(.active) {
+      background: $white-two;
+      color: $blue;
+    }
+
+    &:nth-child(1) {
+      border-top-left-radius: 0.5rem;
+    }
+
+    &.active {
+      background: $white;
+    }
+  }
+
+  &__about-content {
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    padding: 2rem 1.5rem;
+
+    p,
+    h1 {
+      text-transform: capitalize;
+    }
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+  }
+
+  &__weakness {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+
+    .grass {
+      background: $grass;
+    }
+    .poison {
+      background: $poison;
+    }
+    .water {
+      background: $water;
+    }
+    .dragon {
+      background: $dragon;
+    }
+    .ice {
+      background: $ice;
+    }
+    .flying {
+      background: $flying;
+    }
+    .fire {
+      background: $fire;
+    }
+    .ghost {
+      background: $ghost;
+    }
+    .fighting {
+      background: $fighting;
+    }
+    .normal {
+      background: $normal;
+    }
+    .psychic {
+      background: $psychic;
+    }
+    .bug {
+      background: $bug;
+    }
+    .dark {
+      background: $dark;
+    }
+    .steel {
+      background: $steel;
+    }
+    .fairy {
+      background: $fairy;
+    }
+    .electric {
+      background: $electric;
+    }
+    .rock {
+      background: $rock;
+    }
+    .ground {
+      background: $ground;
+    }
+  }
+
+  &__weak {
+    margin: 0 0 20px 0;
+    padding: 5px 10px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+
+    span {
+      color: $white;
+      padding: 10px 14px;
+      border-radius: 29px;
+    }
+  }
+}

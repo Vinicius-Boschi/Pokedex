@@ -1,16 +1,18 @@
-form {
-  text-align: center;
-  position: relative;
-  z-index: 2;
-
-  input {
-    width: 80%;
-    height: 60px;
-    border-radius: 10px;
-    margin: 10px 0px 50px;
-    padding: 0px 20px;
+.search {
+  &__form {
     text-align: center;
-    border: 2px solid transparent;
-    font-size: 1.2rem;
+    position: relative;
+    z-index: 5;
+
+    input {
+      width: 80%;
+      height: 60px;
+      border-radius: 10px;
+      margin: 10px 0px 50px;
+      padding: 0px 20px;
+      text-align: center;
+      border: 2px solid transparent;
+      font-size: 1.2rem;
+    }
   }
 }
