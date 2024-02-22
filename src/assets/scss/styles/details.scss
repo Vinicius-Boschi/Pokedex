@@ -17,6 +17,14 @@
     top: 0px;
     z-index: 2;
 
+    @include phone {
+      top: 10rem;
+    }
+
+    @include tablet {
+      top: 7rem;
+    }
+
     &-name {
       font-weight: bold;
       font-size: 12vw;
@@ -38,6 +46,10 @@
     align-items: center;
     margin-top: 10vh;
     z-index: 2;
+
+    @include phone {
+      flex-direction: column;
+    }
   }
 
   &__image {
@@ -50,10 +62,12 @@
     font-weight: bold;
     margin: 0 0 10px 0;
     text-transform: capitalize;
+    text-align: center;
   }
 
   &__types {
     display: flex;
+    margin-bottom: 1rem;
 
     .grass {
       background: $grass;

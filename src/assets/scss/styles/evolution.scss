@@ -3,9 +3,17 @@
   justify-content: center;
   text-align: center;
 
+  @include phone {
+    flex-direction: column;
+  }
+
   &__pokemon {
     width: 75%;
     height: auto;
+
+    @include phone {
+      width: 30%;
+    }
   }
 
   &__item {
@@ -18,5 +26,9 @@
     opacity: 0.5;
     width: 30%;
     height: auto;
+
+    @include phone {
+      display: none;
+    }
   }
 }
