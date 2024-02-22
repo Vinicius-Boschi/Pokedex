@@ -6,23 +6,29 @@
 Esse é um projeto de requisição da Api de Pokémon para mostrar informações sobre eles.
   
 # <h3> :pencil: Tela Inicial</h3>  
-![home](https://user-images.githubusercontent.com/74377158/198131353-036a0a7b-080a-437a-a5c1-22070af0369f.jpg)
+![home](https://github.com/Vinicius-Boschi/Star-Wars/assets/74377158/1754675d-5979-4c43-bdf3-5f10c4e86e85)
 
-# <h3>:pencil: Modal </h3>
-![modal](https://user-images.githubusercontent.com/74377158/198131418-3e1b5d7b-9963-4951-9df3-6f6c127af2c0.jpg)
+# <h3>:pencil: Sobre </h3>
+![about](https://github.com/Vinicius-Boschi/Star-Wars/assets/74377158/342a5ed0-3c17-4cf0-9938-6421a2276445)
+
+# <h3>:pencil: Status </h3>
+![stats](https://github.com/Vinicius-Boschi/Star-Wars/assets/74377158/1fda3031-1053-4792-a2a2-a943fafe7393)
+
+# <h3>:pencil: Evoluções </h3>
+![evolution](https://github.com/Vinicius-Boschi/Star-Wars/assets/74377158/87a2c884-34b7-414c-8cb0-b7d32e5d4ed3)
 
 # <h3>:pencil: Loading </h3>
 ![gif de loading](https://user-images.githubusercontent.com/74377158/198131459-3475b58d-262f-4d9e-a5ba-0fc363c1769e.jpg)
 
 # <h3> :file_folder: Acessar o projeto</h3>
-Você pode acessar o porjeto por este [link](https://pokemonapipokedex.vercel.app/).
+Você pode acessar o projeto por este [link](https://pokemonapipokedex.vercel.app/)
 
 # <h3> :heavy_check_mark: Status do Projeto:</h3>
 ![Badge Concluido em Desenvolvimento](https://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=blue&style=for-the-badge)
 
 # <h3> :hammer: Funcionalidades do projeto</h3>
-- `Funcionalidade 1`: Mostrar foto do pokémon.
-- `Funcionalidade 2`: Modal que mostra a altura, peso, tipos, habilidades e os status do pokémon.
+- `Funcionalidade 1`: Mostrar uma lista de pokémons e uma barra de pesquisa para filtrar os pokémons.
+- `Funcionalidade 2`: Segunda página que mostra todas as informações do pokémon.
 
 # <h3> :notebook_with_decorative_cover: Tecnologia usadas:</h3>
 * <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="javascript"><br>
@@ -33,7 +39,7 @@ Você pode acessar o porjeto por este [link](https://pokemonapipokedex.vercel.ap
 
 
 # <h3> :computer: Desenvolvedores:</h3>
-[<img src="https://user-images.githubusercontent.com/74377158/173900850-b6afcc77-36a5-4254-b63f-983397918d54.jpg" width=130><br><sub>Vinícius Boschi</sub>](https://github.com/Vinicius-Boschi)
+[<img src="https://github.com/Vinicius-Boschi/Star-Wars/assets/74377158/617712d4-46a6-4a4c-ae2d-026720999432" width=130><br><sub>Vinícius Boschi</sub>](https://github.com/Vinicius-Boschi)
 
 # <h3> :bangbang: Licença:</h3>
-<p> Todos os direitos reservados :copyright: 2022 - Pokémon
+<p> Todos os direitos reservados :copyright: 2024 - Pokémon
